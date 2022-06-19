@@ -1,0 +1,508 @@
+
+/**
+ * Reset
+ */
+ *,
+ *::before,
+ *::after {
+    box-sizing: border-box; 
+}
+html {
+	font-family: 'poppins';
+	-webkit-text-size-adjust: 100%;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	padding: 0;
+	margin: 0;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+}
+body {
+	-webkit-text-size-adjust: 100%;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	padding: 0;
+	margin: 0;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+    font-family: 'poppins', sans-serif;
+}
+
+.navbar{
+    background: #353334;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 10px;
+    cursor: pointer; 
+    transition: transform 0.5s;
+    border-bottom: 2px solid #555;
+}
+
+/**
+ * Global Rules
+ */
+ h1,
+ h2,
+ h3,
+ h4,
+ h5,
+ h6 {
+     color: #fff;
+     font-family: 'Roboto', sans-serif;
+     word-wrap: break-word;
+ }
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul{
+    display: inline-block;
+    list-style: none;
+}
+nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+}
+a{
+    text-decoration:none;
+    color: #fff;
+}
+a:focus {
+	border-bottom: none;
+	outline: thin dotted;
+}
+
+nav ul li a:hover{
+    color: #c41010d3;
+}
+
+.header{
+    background-color: #222;  
+    opacity: 0.8; 
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.card{
+    width: 90%;
+    max-width: 440px;
+    color: #fff;
+    text-align: center;
+    padding: 50px 35px;
+    border: 1px solid rgba(255,255,255,0.3);
+    background: rgba(255,255,255,0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0,0,0,0.1);
+    backdrop-filter: blur(8px);
+}
+.card img{
+    width: 140px;
+    border-radius: 50px;
+}
+.card h3{
+    font-size: 40px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+.card p{
+    font-size: 18px;
+    margin: 10px auto;
+    max-width: 330px;
+}
+.card .links img{
+    width: 40px;
+    border-radius: 50px;
+    margin: 10px 5px;
+    transition: background 0.4s;
+}
+.card .links img:hover{
+    background: #ff01cf;
+}
+.btn{
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 500;
+    background: #fff;
+    color: #353334;
+    padding: 10px 20px;
+    border-radius: 30px;
+    margin: 30px 0 10px;
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+.btn:hover{
+    background-color: #ff523b;
+}
+hr{
+    background: #818080;
+    height: 1px;
+}
+
+.work{
+    background-color: rgba(166, 173, 194, 0.795);
+    width: 100%;
+    height: 100vh;
+    background: rgba(34, 34, 34, 0.8);
+    align-items: center;
+    padding: 40px;
+ 
+    
+}
+
+.skills h2{
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    color: #fff;
+    font-size: 16px;
+}
+
+.sec-2{
+    flex: 1;
+    right: 50%;
+}
+
+.progress-bar{
+    background: #959595;
+    width: 700px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+.progress-bar div{
+    height: 30px;
+    border-radius: 5px;
+    width: 0%;
+}
+
+.progress-bar div span{
+     height: 40px;
+     width: 40px;
+     border-radius: 50%;
+     background: #222;
+     float: right;
+     margin-top: -15px;
+     margin-right: -20px;
+     color: #fff;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+
+.html{
+    background: #d6111b;
+    animation: html 1s linear forwards;
+}
+
+.css{
+    background: #00bcd4;
+    animation: css 1s linear forwards;
+}
+.javascript{
+    background: #cddc39;
+    animation: javascript 1s linear forwards;
+}
+.python{
+    background: #ffeb3bc2;
+    animation: python 1s linear forwards;
+}
+
+.html span{
+    border: 1px solid #e91e63;
+}
+
+.css span{
+    border: 1px solid #00bcd4;
+}
+
+.javascript span{
+    border: 1px solid #cddc39;
+}
+
+.python span{
+    border: 1px solid #ffeb3bc2;
+}
+
+@keyframes html{
+    100%{
+        width: 86%;
+    }
+}
+@keyframes css{
+    100%{
+        width: 75%;
+    }
+}
+@keyframes javascript{
+    100%{
+        width: 67%;
+    }
+}
+@keyframes python{
+    100%{
+        width: 54%;
+    }
+}
+
+.title{
+    display: flex;
+    text-align: center;
+    margin: 0 auto 80px;
+    position: relative;
+    line-height: 60px;
+    color: #fff;
+    padding-top: 30px;
+    font-weight: 600;
+}
+.title::after{
+    content: '';
+    background: #ff523b;
+    width: 80px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* footer */
+.footer{
+    width: 100%;
+    display: flex;
+    background-color: rgb(65, 59, 59);
+    padding: 20px;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+.footer .me{         
+   text-align: right;
+   margin-right: 80px;
+}
+.btf{
+        text-decoration: none;
+        display: inline-block;
+        font-size: 18px;
+        font-weight: 600;
+        background: #fff;
+        color: #353334;
+        padding: 10px 20px;
+        border: 10px;
+        margin: 30px 0 10px;
+        cursor: pointer;
+        transition-duration: 0.5s;       
+}
+.btf:hover{
+    background-color: #ff523b;
+}
+.ft{
+    align-items: center;
+}
+.ft h3{
+    padding: 10px;
+    color: #fff;
+}
+
+.call{
+    float: right;
+    margin-right: 50px;
+    color: #ebe9e99f;
+ }
+
+.right-sec{
+    float: left;
+    margin: 2px;
+    padding: 2px;
+   
+}
+.right-sec p{
+    color: rgba(255, 255, 255, 0.774);
+    font-size: large;
+}
+.footer .links{
+    padding-left: 20px;
+}
+.footer .links img{
+    width: 60px;
+    border-radius: 70px;
+    margin: 10px 5px;
+    transition: background 0.4s;
+}
+.footer .links img:hover{
+    background: #ff01cf;
+}
+.footer hr{
+    border: none;
+    background: #b5b5b5;
+    height: 1px;
+    margin: 20px 0;
+}
+.copyright{
+    text-align: center;
+    color: #fff;
+    padding-right: 20px;
+}
+.menu-icon{
+  width: 28px;  
+  margin-left: 20px;
+  display: none;
+  padding-bottom: 40px;
+}
+
+/* ----------Media Query for menu-----------*/
+@media only screen and (max-width: 800px){
+
+    nav ul{
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background: #333;
+        width: 100%;
+        overflow: hidden;
+        transition: max-height 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin-right: 50px;
+        margin-left: 20px;
+        margin: 10px;
+        font-weight: 400;
+    }
+
+    h1{
+        color: #fff;
+    }
+    nav ul li a{
+        color: #fff;
+        font-weight: 800;
+    }
+    .menu-icon{
+        display: block;
+        cursor: pointer;
+    }
+
+    .container{
+    height: 60vh;
+    width: 100%;
+    }
+    .work{
+        height: 60vh;
+    }
+    .card{
+        width: 95%;
+        max-width: 340px;
+        padding: 0;
+    }
+
+    .progress-bar{
+        background: #959595;
+        width: 100%;
+    }
+    .footer{
+        padding-top: 1px;
+        padding-bottom: 2px;
+        margin: 1px;
+        height: fit-content;
+
+    }
+    .footer .links img{
+        width: 50px;
+        border-radius: 70px;
+        margin: 5px 2px;
+    }
+    h1,
+    h2,
+    h3,
+    p{
+        font-weight: 400;
+        font-size: 1.5rem;
+    }
+    .btf{
+        font-size: 20px;
+        font-weight: 500;
+    }
+}
+
+/* ----------Media Query for less than 600 screen size-----------*/
+@media only screen and (max-width: 600px){
+    .row{
+        text-align: center;
+    }
+    .col-1{
+        flex-basis: 100%;
+    }
+    p{
+        font-size: 16px;
+    }
+    nav ul li{
+        display: block;
+        margin-right: 20px 0 0 20px;
+        margin-top: 0px;
+    }
+    .container{
+        height: 70vh;
+        width: 100%;
+        }
+    .work{
+            height: 50vh;
+        }
+    .card img{
+            width: 90px;
+            border-radius: 50px;
+            cursor: pointer;
+    }
+    .card{
+        opacity: 2;
+    }
+    .footer{
+       margin: 0; 
+    }
+    h1,
+    h2,
+    h3{
+        font-weight: 300;
+        font-size: 1.5rem;
+    }
+    .btf{
+        font-size: 18px;
+        font-weight: 300;
+    }
+}
+
+/* ----------Media Query for less than 320 screen size-----------*/
+@media only screen and (max-width: 320px){
+
+    html{
+        margin-right: -60px;
+    }
+
+    .container{
+        height: 50vh;
+        width: 100%;
+    }
+    .work{
+        height: 50vh;
+    }
+    p{
+        font-size: 1.5rem;
+    }
+    h1,
+    h2,
+    h3{
+        font-weight: 300;
+        font-size: 1.5rem;
+    }
+    .btf{
+        font-size: 18px;
+        font-weight: 300;
+    }
+}

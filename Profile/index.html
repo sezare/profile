@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <!-- Font Awesome -->
+        <script src="https://use.fontawesome.com/ae8d0e1a3a.js"></script>
+
+        <!-- Required meta tags -->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- Document Title -->
+        <title>Sezare Miguel | Profile</title>
+
+        <!-- Fav Icon -->
+        <link rel="icon" type="image/png" href="images/favicon-liguid.png" />
+        <!---- CSS Files -->
+        <link rel="stylesheet" href="Style.css" media="all" />
+
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" /> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    </head>
+<header>
+    <div class="header">
+    <div class="navbar">
+        <div class="logo">
+        <a href="Cart.html"><img src="images/LIQUID (7).png" width="240" alt="logo" class="logo"></a>
+        </div>
+        <nav>
+            <ul id="MenuItems">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#work">Profile</a></li>
+                <li><a href="#blank">Experience</a></li>
+                <li><a href="#link">Contact</a></li>
+            </ul>
+        </nav>
+        <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+</div>
+     <div class="container">
+         <div class="card" data-tilt>
+             <img src="images/profile.png" alt="profie">
+             <h3>MELVO</h3>
+             <span><strong> Windhoek</strong></span>
+            <p> I am a WEB DEVELOPER and I love coding.</p>
+            <strong>Let me build for you a responsive website <br> Its afordable and fast!</strong>
+            <hr>
+            <div class="links">
+                <a href="https://facebook.com/sezare_miguel"><img src="images/facebook.png" alt=""></a>
+                <a href="https://twitter.com/miguel_da_silva"><img src="images/twitter.png " alt=""></a>
+                <a href="https://telegram.com/home"><img src="images/telegram.png" alt=""></a>
+            </div> 
+    
+            <a href="mailto:sezarem229@gmail.com" class="btn">Message me</a>
+         </div>
+         </div>
+        </div>
+</header>
+<body>
+         <!-- Detailed Profile -->
+        <div class="work" id="work">
+            <h2 class="title">Skills & Knwledge</h2>
+                <div class="skills">
+                    <h2>HTML</h2>
+                    <div class="progress-bar">
+                        <div class="html"><span>86%</span></div>
+                    </div>
+                </div>
+                <div class="skills">
+                    <h2>CSS</h2>
+                    <div class="progress-bar">
+                        <div class="css"><span>75%</span></div>
+                    </div>
+                </div>
+                <div class="skills">
+                    <h2>JavaScript</h2>
+                    <div class="progress-bar">
+                        <div class="javascript"><span>67%</span></div>
+                    </div>
+                </div>
+                <div class="skills">
+                    <h2>Python</h2>
+                    <div class="progress-bar">
+                        <div class="python"><span>54%</span></div>
+                    </div>
+                </div>
+                <div class="sec-2">
+                    <a href="images/" class="btn">Download my Cv</a>
+                </div>
+        </div>
+     <!-- footer -->
+     <div class="footer" id="link">
+         
+             <div class="me">
+                 
+            <a href="mailto:sezarem229@gmail.com" class="btf">Message me</a>
+            
+            </div>
+            
+             <hr class="line">
+             <div class="links">
+                <h3>Follow me</h3>
+                <a href="https://facebook.com/sezare_miguel"><img src="images/facebook.png" alt=""></a>
+                <a href="https://twitter.com/miguel_da_silva"><img src="images/twitter.png " alt=""></a>
+                <a href="https://telegram.com/home"><img src="images/telegram.png" alt=""></a>
+                <p class="call"> &phone; +264 81 426 8713 <br> &#x2709 melvo@sezaremiguel.com, sezarem229@gmail.com </p>
+            </div>
+            
+            <div class="right-sec">
+                <h2 class="about" id="about">About me</h2>
+                <p>I am a creative designer and developer, who aims to work with small businesses and marginalized communities to bring their passions to life. I offer both design and development services of web applications or websites!
+
+                   The move towards increasing exclusivity and diversity in the industry through representation is of importance to me. Therfore, I look forward working for you or with you.
+                    
+                     Please send me a message or catch me on my social media handles. <br> Technology leads, society follows.</p>
+    
+            </div> 
+            <div class="copyright">
+                <p>&copy;<script type="text/javascript">document.write(new Date().getFullYear());</script> Designed by <strong><a href="https://Liquid.com">Liquid Inc</a></strong>| All Rights Reserved</p>
+            </div>
+         </div>
+         <!--------js for toggle menu -->
+         <script>
+            var MenuItems = document.getElementById("MenuItems");
+
+            MenuItems.style.maxHeight = "0px";
+
+            function menutoggle(){
+                
+                if (MenuItems.style.maxHeight == "0px") 
+                    {
+                        MenuItems.style.maxHeight ="200px";
+                    }
+                else
+                    {
+                        MenuItems.style.maxHeight ="0px";
+                    }
+                
+            }
+        </script>
+     <script src="vanilla-tilt.js"></script>
+     <script src="capctha.js"></script>
+</body>
+</html>
